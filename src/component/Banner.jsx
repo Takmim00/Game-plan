@@ -3,7 +3,7 @@ import banner from '../assets/game1.png'
 
 const Banner = () => {
   return (
-    <div className="relative bg-gradient-to-r from-purple-700 to-purple-500 text-white overflow-hidden ">
+    <div className="relative bg-gradient-to-r from-purple-800 to-purple-500 text-white overflow-hidden ">
 
       <div className="absolute w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-96 lg:h-96 bg-pink-500 opacity-20 rounded-full blur-3xl bottom-20 right-10 sm:bottom-32 sm:right-20 md:bottom-40 md:right-32 lg:right-[200px] xl:right-[650px] z-0"></div>
       <div className="absolute w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-96 lg:h-96 bg-pink-500 opacity-20 rounded-full blur-3xl -top-8 -right-8 sm:-top-12 sm:-right-12 md:-top-16 md:-right-0 z-0"></div>
