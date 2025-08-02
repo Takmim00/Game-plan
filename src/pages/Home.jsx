@@ -1,4 +1,5 @@
 import Banner from "../component/Banner";
+import Coaches from "../component/Coaches";
 import Ultimate from "../component/Ultimate";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
             <Banner/>
             <Ultimate/>
+            <Coaches/>
         </div>
     );
 };
