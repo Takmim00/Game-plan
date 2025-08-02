@@ -3,20 +3,20 @@ import banner from "../assets/game1.png";
 
 const Banner = () => {
   return (
-    <div classNameName="relative bg-gradient-to-r from-purple-800 to-purple-500 text-white overflow-hidden ">
-      <div classNameName="absolute w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-96 lg:h-96 bg-pink-500 opacity-20 rounded-full blur-3xl bottom-20 right-10 sm:bottom-32 sm:right-20 md:bottom-40 md:right-32 lg:right-[200px] xl:right-[650px] z-0"></div>
-      <div classNameName="absolute w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-96 lg:h-96 bg-pink-500 opacity-20 rounded-full blur-3xl -top-8 -right-8 sm:-top-12 sm:-right-12 md:-top-16 md:-right-0 z-0"></div>
-      <div classNameName="absolute w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-96 lg:h-96 bg-pink-500 opacity-20 rounded-full blur-3xl -top-16 -left-16 sm:-top-24 sm:-left-24 md:-top-[150px] md:-left-[150px] z-0"></div>
+    <div className="relative bg-gradient-to-r from-purple-800 to-purple-500 text-white overflow-hidden ">
+      <div className="absolute w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-96 lg:h-96 bg-pink-500 opacity-20 rounded-full blur-3xl bottom-20 right-10 sm:bottom-32 sm:right-20 md:bottom-40 md:right-32 lg:right-[200px] xl:right-[650px] z-0"></div>
+      <div className="absolute w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-96 lg:h-96 bg-pink-500 opacity-20 rounded-full blur-3xl -top-8 -right-8 sm:-top-12 sm:-right-12 md:-top-16 md:-right-0 z-0"></div>
+      <div className="absolute w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-96 lg:h-96 bg-pink-500 opacity-20 rounded-full blur-3xl -top-16 -left-16 sm:-top-24 sm:-left-24 md:-top-[150px] md:-left-[150px] z-0"></div>
 
       {/* Navigation */}
-      <nav classNameName="relative z-10 flex justify-between items-center w-full px-4 sm:px-6 lg:px-8 xl:w-11/12 xl:mx-auto py-4">
-        <div classNameName="flex items-center space-x-2">
-          <Link href="/" classNameName="flex-shrink-0">
+      <nav className="relative z-10 flex justify-between items-center w-full px-4 sm:px-6 lg:px-8 xl:w-11/12 xl:mx-auto py-4">
+        <div className="flex items-center space-x-2">
+          <Link href="/" className="flex-shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="120"
               height="60"
-              classNameName="sm:w-[140px] sm:h-[70px] md:w-[150px] md:h-[75px]"
+              className="sm:w-[140px] sm:h-[70px] md:w-[150px] md:h-[75px]"
               viewBox="0 0 1591 750"
               fill="none"
             >
@@ -60,21 +60,21 @@ const Banner = () => {
           </Link>
         </div>
 
-        <div classNameName="hidden lg:flex space-x-6 text-white font-medium">
-          <a href="#" classNameName="hover:text-gray-200">
+        <div className="hidden lg:flex space-x-6 text-white font-medium">
+          <a href="#" className="hover:text-gray-200">
             Features
           </a>
-          <a href="#" classNameName="hover:text-gray-200">
+          <a href="#" className="hover:text-gray-200">
             FAQ
           </a>
-          <a href="#" classNameName="hover:text-gray-200">
+          <a href="#" className="hover:text-gray-200">
             Pricing
           </a>
         </div>
 
-        <button classNameName="lg:hidden text-white p-2">
+        <button className="lg:hidden text-white p-2">
           <svg
-            classNameName="w-6 h-6"
+            className="w-6 h-6"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -88,23 +88,23 @@ const Banner = () => {
           </svg>
         </button>
 
-        <button classNameName="hidden lg:block text-sm xl:text-lg font-bold bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 xl:px-6 xl:py-2 rounded-full">
+        <button className="hidden lg:block text-sm xl:text-lg font-bold bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 xl:px-6 xl:py-2 rounded-full">
           Login / Sign Up
         </button>
       </nav>
 
       {/* Main Content */}
-      <div classNameName="relative z-10 flex flex-col lg:flex-row items-center justify-between w-full px-4 sm:px-6 lg:px-8 xl:w-11/12 xl:mx-auto   lg:py-0">
+      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between w-full px-4 sm:px-6 lg:px-8 xl:w-11/12 xl:mx-auto   lg:py-0">
         {/* Left Content */}
-        <div classNameName="w-full lg:w-1/2 xl:max-w-xl space-y-4 sm:space-y-6 text-center lg:text-left">
-          <h1 classNameName="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-extrabold leading-tight">
-            Plan Your <br classNameName="hidden sm:block" />
-            <span classNameName="block sm:inline"> Coaching Sessions In </span>
-            <br classNameName="hidden sm:block" />
-            <span classNameName="block sm:inline"> Seconds</span>
+        <div className="w-full lg:w-1/2 xl:max-w-xl space-y-4 sm:space-y-6 text-center lg:text-left">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-extrabold leading-tight">
+            Plan Your <br className="hidden sm:block" />
+            <span className="block sm:inline"> Coaching Sessions In </span>
+            <br className="hidden sm:block" />
+            <span className="block sm:inline"> Seconds</span>
           </h1>
 
-          <p classNameName="text-base sm:text-lg lg:text-base xl:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+          <p className="text-base sm:text-lg lg:text-base xl:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
             Transform how you plan your sessions with our cutting-edge AI tool
             designed specifically for sports coaches. Whether you're planning an
             entire training session, searching for fresh and creative ideas, or
@@ -113,25 +113,25 @@ const Banner = () => {
             what you love most—coaching and inspiring your team.
           </p>
 
-          <div classNameName="space-y-4">
-            <div classNameName="flex flex-col sm:flex-row lg:flex-col xl:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 lg:space-x-0 lg:space-y-4 xl:space-y-0 xl:space-x-4">
-              <button classNameName="w-full sm:w-auto bg-[#CC7FFF] hover:bg-[#B366E6] text-white px-8 sm:px-12 lg:px-8 xl:px-16 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg">
+          <div className="space-y-4">
+            <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 lg:space-x-0 lg:space-y-4 xl:space-y-0 xl:space-x-4">
+              <button className="w-full sm:w-auto bg-[#CC7FFF] hover:bg-[#B366E6] text-white px-8 sm:px-12 lg:px-8 xl:px-16 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg">
                 Start for Free
               </button>
             </div>
-            <p classNameName="text-xs sm:text-sm opacity-90">
+            <p className="text-xs sm:text-sm opacity-90">
               * No credit card required
             </p>
           </div>
         </div>
 
         {/* Right Image */}
-        <div classNameName="w-full lg:w-1/2 mt-8 lg:mt-0 flex items-end justify-center lg:justify-end h-64 sm:h-80 md:h-96 lg:h-full">
-          <div classNameName="relative w-full max-w-md lg:max-w-lg xl:max-w-xl h-full">
+        <div className="w-full lg:w-1/2 mt-8 lg:mt-0 flex items-end justify-center lg:justify-end h-64 sm:h-80 md:h-96 lg:h-full">
+          <div className="relative w-full max-w-md lg:max-w-lg xl:max-w-xl h-full">
             <img
               src={banner}
               alt="Coach with kids"
-              classNameName="w-full h-full object-contain object-bottom"
+              className="w-full h-full object-contain object-bottom"
             />
           </div>
         </div>

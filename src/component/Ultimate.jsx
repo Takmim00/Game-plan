@@ -1,7 +1,7 @@
 import img from "../assets/game2.png";
 const Ultimate = () => {
   return (
-    <div classNameName="grid grid-cols-1 md:grid-cols-2  w-11/12 mx-auto py-10 md:py-16">
+    <div className="grid grid-cols-1 md:grid-cols-2  w-11/12 mx-auto py-10 md:py-16">
       <div className="w-full  flex justify-center">
         <div className="relative grid-bg ">
           <div className=" overflow-hidden p-1 ">
@@ -13,24 +13,24 @@ const Ultimate = () => {
           </div>
         </div>
       </div>
-      <div classNameName="w-full  mt-8 md:mt-0 md:pl-12">
-        <h2 classNameName="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+      <div className="w-full  mt-8 md:mt-0 md:pl-12">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
           Your Ultimate <br /> Coaching <br /> Assistant Is Here
         </h2>
-        <ul classNameName="list-disc list-inside  mt-6 space-y-4 text-gray-800 text-lg">
-          <li classNameName=" text-sm md:text-base">
+        <ul className="list-disc list-inside  mt-6 space-y-4 text-gray-800 text-lg">
+          <li className=" text-sm md:text-base">
             Save Time on Planning: Instantly generate comprehensive training
             sessions, freeing up valuable time to focus on coaching.
           </li>
-          <li classNameName=" text-sm md:text-base">
+          <li className=" text-sm md:text-base">
             Access Fresh Ideas: Discover innovative drills and session plans to
             keep your athletes engaged and challenged.
           </li>
-          <li classNameName=" text-sm md:text-base">
+          <li className=" text-sm md:text-base">
             Comprehensive Drill Library: Quickly find drills for specific
             scenarios, skills, or challenges, ensuring you’re always prepared.
           </li>
-          <li classNameName=" text-sm md:text-base">
+          <li className=" text-sm md:text-base">
             Personalized Recommendations: Receive tailored suggestions based on
             your team’s skill level, sport, and specific goals.
           </li>
