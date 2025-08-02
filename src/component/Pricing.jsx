@@ -1,6 +1,6 @@
 const Pricing = () => {
   return (
-    <div class="py-10 md:py-16 px-4 sm:px-6 lg:px-16 bg-white text-center">
+    <div class="py-10 md:py-16 px-4 sm:px-6 lg:px-16 bg-white text-center" id="pricing">
       <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-12">
         Pricing
       </h2>

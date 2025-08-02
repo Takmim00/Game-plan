@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link} from 'react-scroll';
 import banner from "../assets/game1.png";
 
 const Banner = () => {
@@ -61,15 +61,33 @@ const Banner = () => {
         </div>
 
         <div className="hidden lg:flex space-x-6 text-white font-medium">
-          <a href="#" className="hover:text-gray-200">
+          <Link
+            to="features" 
+            smooth={true}
+            duration={500}
+            offset={-80} 
+            className="hover:text-gray-200 cursor-pointer"
+          >
             Features
-          </a>
-          <a href="#" className="hover:text-gray-200">
+          </Link>
+          <Link
+            to="faq"
+            smooth={true}
+            duration={500}
+            offset={-80}
+            className="hover:text-gray-200 cursor-pointer"
+          >
             FAQ
-          </a>
-          <a href="#" className="hover:text-gray-200">
+          </Link>
+          <Link
+            to="pricing"
+            smooth={true}
+            duration={500}
+            offset={-80}
+            className="hover:text-gray-200 cursor-pointer"
+          >
             Pricing
-          </a>
+          </Link>
         </div>
 
         <button className="lg:hidden text-white p-2">

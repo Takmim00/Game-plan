@@ -26,7 +26,7 @@ const Faq = () => {
   ];
 
   return (
-    <div className="py-10 md:py-16 w-11/12 mx-auto">
+    <div className="py-10 md:py-16 w-11/12 mx-auto" id="faq">
       <div className="max-w-2xl mx-auto text-center mb-8 md:mb-12">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900">
           Frequently Asked Questions

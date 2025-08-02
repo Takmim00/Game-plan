@@ -1,6 +1,6 @@
 const Coaches = () => {
   return (
-    <div className=" py-10 md:py-16 w-11/12 mx-auto text-center">
+    <div className=" py-10 md:py-16 w-11/12 mx-auto text-center" id="features">
       <div className="max-w-2xl mx-auto mb-12">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900">
           Made By Coaches, For Coaches.
