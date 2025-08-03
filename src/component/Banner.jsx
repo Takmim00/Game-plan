@@ -1,4 +1,5 @@
-import { Link} from 'react-scroll';
+import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import banner from "../assets/game1.png";
 
 const Banner = () => {
@@ -62,10 +63,10 @@ const Banner = () => {
 
         <div className="hidden lg:flex space-x-6 text-white font-medium">
           <Link
-            to="features" 
+            to="features"
             smooth={true}
             duration={500}
-            offset={-80} 
+            offset={-80}
             className="hover:text-gray-200 cursor-pointer"
           >
             Features
@@ -106,9 +107,11 @@ const Banner = () => {
           </svg>
         </button>
 
-        <button className="hidden lg:block text-sm xl:text-lg font-bold bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 xl:px-6 xl:py-2 rounded-full">
-          Login / Sign Up
-        </button>
+        <NavLink to='/login'>
+          <button className="hidden lg:block text-sm xl:text-lg font-bold bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 xl:px-6 xl:py-2 rounded-full">
+            Login / Sign Up
+          </button>
+        </NavLink>
       </nav>
 
       {/* Main Content */}
