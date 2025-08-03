@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center ">
@@ -70,9 +72,9 @@ const Login = () => {
         <div className="flex items-center justify-between mt-4">
           <div className="font-semibold text-sm text-slate-500 text-left">
             Don't have an account?{" "}
-            <a className="text-red-600 underline" href="/signUp">
+            <Link to="/signup" className="text-red-600 underline">
               Register
-            </a>
+            </Link>
           </div>
           <a className="text-custom-blue" href="/forgetPassword">
             Forgot password?
