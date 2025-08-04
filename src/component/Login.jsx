@@ -1,12 +1,16 @@
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { logInUser } from "../redux/authSlice";
 
 const Login = () => {
+  const dispatch = useDispatch();
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
     console.log(email, password);
+    dispatch(logInUser({email,password}))
   };
   return (
     <div className="min-h-screen flex items-center justify-center ">
@@ -32,7 +36,7 @@ const Login = () => {
                 id="email"
                 type="text"
                 name="email"
-                autoComplete="email" 
+                autoComplete="email"
                 className="block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
               />
             </div>
@@ -72,7 +76,7 @@ const Login = () => {
           </div>
           <button
             type="submit"
-            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-[#451DA9] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            className="btn w-full flex justify-center py-2 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-[#451DA9] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
             Sign in
           </button>
