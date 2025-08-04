@@ -4,9 +4,9 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
-    const name = form.name.value;
+    const email = form.email.value;
     const password = form.password.value;
-    console.log(name, password);
+    console.log(email, password);
   };
   return (
     <div className="min-h-screen flex items-center justify-center ">

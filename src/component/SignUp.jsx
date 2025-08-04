@@ -1,13 +1,18 @@
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { signUpUser } from "../redux/authSlice";
 
 const SignUp = () => {
+  const dispatch = useDispatch();
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
     const name = form.name.value;
+    const email = form.email.value;
     const password = form.password.value;
     const confirmPassword = form.confirmPassword.value;
-    console.log(name, password, confirmPassword);
+    console.log(name, email, password, confirmPassword);
+    dispatch(signUpUser({name,email,password,confirmPassword}))
   };
   return (
     <div className="min-h-screen flex items-center justify-center ">
