@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
 
 const SignUp = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    const password = form.password.value;
+    const confirmPassword = form.confirmPassword.value;
+    console.log(name, password, confirmPassword);
+  };
   return (
     <div className="min-h-screen flex items-center justify-center ">
       <div className="w-full max-w-md mx-auto p-6 ">
@@ -9,7 +17,7 @@ const SignUp = () => {
           <p className="text-gray-600 mb-6">Create a new account</p>
         </div>
 
-        <form className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label className="text-sm text-gray-700 flex items-start">
               User Name
@@ -19,6 +27,7 @@ const SignUp = () => {
               placeholder="Enter your full name"
               className="w-full h-12 p-4 border rounded-xl mt-2 border-gray-300"
               name="name"
+              autoComplete="username"
             />
           </div>
           <div>
@@ -30,6 +39,7 @@ const SignUp = () => {
               placeholder="Enter your email"
               className="w-full h-12 p-4 border rounded-xl mt-2 border-gray-300"
               name="email"
+              autoComplete="email"
             />
           </div>
           <div>
@@ -42,12 +52,13 @@ const SignUp = () => {
                 placeholder="Enter your password"
                 className="w-full h-12 p-4 border rounded-xl mt-2 border-gray-300"
                 name="password"
+                autoComplete="new-password"
               />
               <span className="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 576 512"
                   height="1em"
                   width="1em"
@@ -68,12 +79,13 @@ const SignUp = () => {
                 placeholder="Confirm your password"
                 className="w-full h-12 p-4 border rounded-xl mt-2 border-gray-300"
                 name="confirmPassword"
+                autoComplete="new-password"
               />
               <span className="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 576 512"
                   height="1em"
                   width="1em"
@@ -87,7 +99,7 @@ const SignUp = () => {
           <div className="flex items-start space-x-2 mt-4">
             <input type="checkbox" className="w-5 h-5" name="termsAccepted" />
             <label
-              for="termsAccepted"
+              htmlFor="termsAccepted"
               className="text-sm text-gray-700 text-start"
             >
               By creating an account, I accept the Terms &amp; Conditions &amp;
