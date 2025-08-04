@@ -9,7 +9,7 @@ const initialState = {
 };
 
 export const signUpUser = createAsyncThunk("signUpUser", async (body) => {
-  const res = await fetch("api", {
+  const res = await fetch("https://study-hive-server-three.vercel.app/users", {
     method: "post",
     headers: {
       "Content-Type": "application/json",
@@ -21,7 +21,7 @@ export const signUpUser = createAsyncThunk("signUpUser", async (body) => {
 });
 
 export const logInUser = createAsyncThunk("logInUser", async (body) => {
-  const res = await fetch("api", {
+  const res = await fetch("https://study-hive-server-three.vercel.app/users", {
     method: "post",
     headers: {
       "Content-Type": "application/json",
@@ -33,7 +33,7 @@ export const logInUser = createAsyncThunk("logInUser", async (body) => {
 });
 
 const authSlice = createSlice({
-  name: "user",
+  name: "auth",
   initialState,
   reducers: {
     addToken: (state, action) => {

@@ -10,7 +10,7 @@ const Login = () => {
     const email = form.email.value;
     const password = form.password.value;
     console.log(email, password);
-    dispatch(logInUser({email,password}))
+    dispatch(logInUser({ email, password }));
   };
   return (
     <div className="min-h-screen flex items-center justify-center ">
