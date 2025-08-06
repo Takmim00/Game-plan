@@ -1,4 +1,4 @@
-import { ChevronDown, LogOut, Menu } from "lucide-react";
+import { ChevronDown, LogOut, Menu, Search, Mic, Image as ImageIcon } from "lucide-react";
 import { useState } from "react";
 
 const Chat = ({ setSidebarOpen }) => {
@@ -7,10 +7,18 @@ const Chat = ({ setSidebarOpen }) => {
   const handleLogout = () => {
     alert("Logged out!");
   };
+
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      alert(`Selected image: ${file.name}`);
+    }
+  };
+
   return (
     <div className="flex-1 flex flex-col">
+      {/* Header */}
       <div className="flex justify-between items-center px-6 py-4 border-b bg-white relative">
-        {/* Mobile */}
         <button className="md:hidden p-2" onClick={() => setSidebarOpen(true)}>
           <Menu className="w-6 h-6" />
         </button>
@@ -24,7 +32,6 @@ const Chat = ({ setSidebarOpen }) => {
             <ChevronDown className="w-5 h-5" />
           </button>
 
-          {/* Dropdown  */}
           {dropdownOpen && (
             <div className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-md border">
               <button
@@ -39,30 +46,54 @@ const Chat = ({ setSidebarOpen }) => {
         </div>
       </div>
 
-      {/* Chat Area */}
+      {/* Chat */}
       <div className="flex-1 flex flex-col justify-center items-center text-gray-500 px-4 text-center">
         <p>No messages yet. Start a new conversation!</p>
       </div>
 
       {/* Message */}
-      <div className="p-4 border-t ">
-        <div className="flex items-center border rounded-md overflow-hidden">
+      <div className="p-4 border-t">
+        <div className="flex items-center border rounded-md overflow-hidden relative">
+          
+          <Search className="w-5 h-5 text-gray-400 absolute left-3" />
           <input
             type="text"
             placeholder="Type your message (Shift + Enter for new line)"
-            className="flex-1 p-2 outline-none"
+            className="flex-1 pl-10 p-2 outline-none"
           />
+
+          
+          <label className="p-3 cursor-pointer hover:bg-gray-100">
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleImageUpload}
+              className="hidden"
+            />
+            <ImageIcon className="w-6 h-6 text-gray-600" />
+          </label>
+
+         
+          <button
+            type="button"
+            className="p-3 cursor-pointer hover:bg-gray-100"
+            title="Voice input"
+          >
+            <Mic className="w-6 h-6 text-gray-600" />
+          </button>
+
+          
           <button
             type="submit"
-            class="ml-4 p-3 rounded-full absolute right-4 cursor-pointer  "
-            disabled=""
+            className="btn p-3 cursor-pointer hover:bg-gray-100"
+            title="Send"
           >
             <svg
               stroke="currentColor"
               fill="currentColor"
-              stroke-width="0"
+              strokeWidth="0"
               viewBox="0 0 512 512"
-              class="text-3xl text-black "
+              className="text-2xl text-black"
               height="1em"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
